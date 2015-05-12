@@ -1,0 +1,11 @@
+//= require clipone/jquery.min
+//= require clipone/jquery-ui-1.10.2.custom.min
+//= require clipone/bootstrap
+//= require clipone/bootstrap-hover-dropdown.min
+//= require clipone/jquery.blockUI
+//= require clipone/jquery.mousewheel
+//= require clipone/perfect-scrollbar
+//= require clipone/less-1.5.0.min
+//= require clipone/jquery.cookie
+//= require clipone/bootstrap-colorpalette
+//= require clipone/main
