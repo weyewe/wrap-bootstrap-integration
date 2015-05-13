@@ -3,6 +3,11 @@ class CustomersController < ApplicationController
   end
   
   def new
-    @customer=  Customer.new
+    @new_customer=  Customer.new
+  end
+  
+  def new_horizontal
+    
+    @new_customer = Customer.new
   end
 end

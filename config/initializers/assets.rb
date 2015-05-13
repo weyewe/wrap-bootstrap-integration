@@ -11,6 +11,7 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( clipone/fullcalendar.css )
 Rails.application.config.assets.precompile += %w( clipone/print.css )
+Rails.application.config.assets.precompile += %w( clipone/datepicker.css )
 
 Rails.application.config.assets.precompile += %w( clipone/jquery.flot.js )
 Rails.application.config.assets.precompile += %w( clipone/jquery.flot.pie.js )
@@ -20,6 +21,7 @@ Rails.application.config.assets.precompile += %w( clipone/jquery.easy-pie-chart.
 Rails.application.config.assets.precompile += %w( clipone/jquery.ui.touch-punch.min.js )
 Rails.application.config.assets.precompile += %w( clipone/fullcalendar.js )
 Rails.application.config.assets.precompile += %w( clipone/index.js )
+Rails.application.config.assets.precompile += %w( clipone/bootstrap-datepicker.js )
 
 Rails.application.config.assets.precompile += %w( clipone/avatar-1.jpg )
 Rails.application.config.assets.precompile += %w( clipone/avatar-2.jpg )

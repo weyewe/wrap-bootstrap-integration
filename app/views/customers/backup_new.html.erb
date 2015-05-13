@@ -1,3 +1,9 @@
+<%= simple_form_for @new_customer do |f| %>
+<%= f.input :name, label: 'Your username please', wrapper_html: { class: 'col-lg-3' } %>
+<%= f.input :email, hint: 'No special characters.' %>
+<%= f.input :description, placeholder: 'user@domain.com' %> 
+  <%= f.button :submit %>
+<% end %>
 
 <%= simple_form_for @new_customer do |f| %>
 
@@ -26,6 +32,13 @@
 
 
 
+<!--     <div class="col-lg-3">
+      <label class="control-label">
+      Email
+      </label>
+      <input class="string email optional form-control form-control"
+             id="transaction_email" name="transaction[email]" type="email">
+    </div> -->
     <%= f.input :name, label: 'Email', wrapper_html: { class: 'col-lg-3' } %>
 
 
@@ -45,32 +58,46 @@
 
   <div class="invoice-details row">
     <%= f.input :description, label: 'Billing Address', wrapper_html: { class: 'col-lg-3' } %>
-     
-    
     <div class="col-lg-2">
       <div class="payment-terms">
+        <%= f.input :transaction_date, label: 'Transaction Date', :as => :string, input_html: { class: 'date-picker' }  %>
         
-        <%= f.input :transaction_date , wrapper: :vertical_input_group  do %>
+<!--       <div class="form-group">
+        <label class="control-label">
+        Transaction Date
+        </label>
+        <div class="input-group date" data-date-format="dd/mm/yyyy">
           <span class="input-group-addon custom">
             <i class="fa fa-calendar"></i>
           </span>
-          <%= f.input_field :transaction_date, class: 'date-picker', :as => :string %>
-        <% end %>
+          <input class="string required form-control form-control date-picker" id="transaction_transaction_date" name="transaction[transaction_date]" type="text" value="12/05/2015">
+        </div>
+      </div> -->
+      <!-- Transaction Due Date -->
         
         
-        <%= f.input :due_date , wrapper: :vertical_input_group  do %>
+<!--       <div class="form-group">
+        <label class="control-label">
+        Due Date
+        </label>
+        <div class="input-group date" data-date-format="dd/mm/yyyy">
           <span class="input-group-addon custom">
             <i class="fa fa-calendar"></i>
           </span>
-          <%= f.input_field :due_date, class: 'date-picker', :as => :string %>
-        <% end %>
+          <input class="string optional form-control form-control date-picker" id="transaction_due_date" name="transaction[due_date]" type="text" value="11/06/2015">
+        </div>
+      </div> -->
+      <!-- Shipping Date -->
         
-        
+        <%= f.input :due_date, label: 'Due Date', :as => :string , input_html: { class: 'date-picker' }  %>
       </div>
     </div>
 
 
 
+
+
+    <!-- THIRD COLUMN - SHIPPING -->
     <div class="col-lg-2">
       <div class="shipping-method">
       <!-- Terms of Payment -->
@@ -114,7 +141,8 @@
       </div>
     </div>
 
-    <div class="col-lg-2"></div>
+    <div class="col-lg-2">
+    </div>
 
 
   </div>
